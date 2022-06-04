@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/** hero image**/
+
+/*@media (min-width: 100px) {*/
+    
+    /** hero image**/
 .section__1{
     position: relative;
     font-size: 15px;
@@ -10,42 +13,63 @@
     background-image: url(/assets/images/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 128rem;
+    min-height: 120rem;
     z-index: -1;
 }
-
-   /**container**/
-   .container{
-    margin: 0 auto;
-    width: 90%;
+   
+.top__img{
+       width: 15rem;
+       position: absolute;
+       left: 1rem;
 }
 
 /**first card after carousel**/
 .behind__card{
     position: absolute;
     top: 2rem;
-    width: 22rem;
-    min-height: 120rem;
+    width: 21.5rem;
+    min-height: 115rem;
+    opacity: 0.8;
     z-index: -1;
     background-image: linear-gradient(#306ed5, #b23c8a);
 }
-
+/**blue card**/
 .hero__hover{
+    position: relative;
     background-color: #0f2557;
-    text-align: center;
-    height: 50.5rem;
+    height: 50rem;
     padding-top: 3rem;
+    opacity: 0.8;
+    margin-left: 1rem;
+    top: 7rem;
+    z-index: -1;
 }
+.text{
+    padding: 1rem 0 0 1rem;
+    max-width: 80%;
+}
+
 .hero__heading{
-    font-size: 3.75rem;
+    font-size: 2.25rem;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
     line-height: 1.2;
-}
-.download_button{
-    margin: 2rem;
+    padding-bottom: 1.5rem;
 }
 
+.paragraph{
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/**button of download**/
+.download_button{
+    margin: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
 .download__button{
     background-color: #f15048;
     text-decoration: none;
@@ -54,26 +78,80 @@
     font-weight: 700;
     letter-spacing: 2px;
 }
-.square{
-    display: grid;
-    gap: 2rem;
-    justify-content: center;
-    padding-top: 1rem;
+    
+/**four cards**/
+.squares{
+    position: absolute;
+    width: 90%;
 }
 
-
-
+.background_card{
+    background-color: #3ea4fdc0;
+     opacity: 0.9;
+     min-height: 30%;
+     flex-direction: column;
+     text-align: center;
+     padding: 1rem;
+     max-width: 80%;
+     margin: 2.5rem;
+}
 
 .svg_logo{
-    position: absolute;
-    left: 9.5rem;
-    padding-top: 2rem;
-    width: 5rem;
-    z-index: 2;
+    max-width: 30%;
+    justify-content: center;
+    display: inline-block;
 }
+
 .square__paragraph{
-    position: absolute;
-    left: 7rem;
-    padding-top: 9rem;
-    z-index: 2;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
 }
+
+@media only screen and (min-width: 1200px) {
+
+    .behind__card{
+        position: absolute;
+        top: 2rem;
+        width: 21.5rem;
+        min-height: 50rem;
+        opacity: 0.8;
+        z-index: -1;
+        background-image: linear-gradient(#306ed5, #b23c8a);
+    }
+
+    .hero__hover{
+        position: relative;
+        background-color: #0f2557;
+        max-width: 85%;
+        height: 32rem;
+        padding-top: 3rem;
+        opacity: 0.8;
+        margin-left: 1rem;
+        top: 7rem;
+        z-index: -1;
+    }
+
+    .squares{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .text{
+        padding: 1rem 0 0 4rem;
+    }
+
+    .container{
+    margin: 0 auto;
+    width: 90%;
+   }
+}
+
+      
+
+
+      
+      
+      
+  
