@@ -24,7 +24,7 @@
 }
 
 /**first card after carousel**/
-.behind__card{
+.behind__card_gradient{
     position: absolute;
     top: 2rem;
     width: 21.5rem;
@@ -33,6 +33,36 @@
     z-index: -1;
     background-image: linear-gradient(#306ed5, #b23c8a);
 }
+
+/**aside card**/
+.aside__card{
+    position: absolute;
+    text-align: center;
+    background-color: #3ea4fdc0;
+    width: 10%;
+    left: 85rem;
+    top: 4rem;
+    line-height: 0;
+    min-height: 10rem;
+    padding-bottom: 2rem;
+}
+.aside__card h5{
+    font-size: 25px;
+}
+h2{
+    font-size: 70px;
+}
+.red_circle{
+    position: relative;
+    max-width: 50px;
+    height: 2rem;
+    background-color: #f15048;
+    border-radius: 50%;
+    left: 4rem;
+    top: 1rem;
+}
+
+
 /**blue card**/
 .hero__hover{
     position: relative;
@@ -147,6 +177,9 @@
     width: 90%;
    }
 }
+
+
+
 
       
 
